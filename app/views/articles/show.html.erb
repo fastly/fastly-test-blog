@@ -1,0 +1,31 @@
+<div>
+  <h1><%= @article.title.titleize %></h1>
+</div>
+
+<div>
+  <%= @article.body.html_safe %>
+</div>
+
+
+
+<div>
+  <h2>Comments</h2>
+</div>
+
+<div>
+   <% @article.comments.each do |comment| %>
+    <p><%= comment.name %> commented: 
+    <%= comment.body %></p>    
+  <% end %>
+</div>
+
+<%= link_to 'Back', articles_path, class: "btn btn-info" %>
+<%= link_to 'Create new comment', "/articles/#{params[:id]}/create-comment", class: "btn btn-info" %>
+<%= link_to 'Delete this article', article_path(@article), method: :delete, class: "btn btn-warning" %>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
