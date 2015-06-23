@@ -8,7 +8,7 @@ You will set up a new service in your Fastly account, and configure it in order 
 
 Rossa is a blog style app with fake content and comments that can be cached and purged using Fastly.
 
-It is named after [Formula Rossa](en.wikipedia.org/wiki/Formula_Rossa), currently the world's fastest rollercoaster.
+It is named after [Formula Rossa](https://en.wikipedia.org/wiki/Formula_Rossa), currently the world's fastest rollercoaster.
 
 ## Getting Started
 
