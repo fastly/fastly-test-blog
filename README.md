@@ -12,6 +12,6 @@ It is named after [Formula Rossa](https://en.wikipedia.org/wiki/Formula_Rossa), 
 
 ## Getting Started
 
-If you already have a demo URL, go to the [Wiki](https://github.com/fastly/rossa/wiki) and open Module 1.
+If you already have a demo URL, please go to the [Wiki](https://github.com/fastly/rossa/wiki) to get started.
 
-If you need a demo URL, ping @kamzilla for one.
+If you are leading the demo, be sure to read over [the guide](https://github.com/fastly/rossa/wiki/Training-guide).
