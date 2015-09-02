@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+ruby '2.2.3'
+
 gem 'rails', '4.2.0'
 gem 'pg'
 gem 'bootstrap-sass'
@@ -19,5 +22,3 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
-ruby "2.1.3"
