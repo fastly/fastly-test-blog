@@ -15,10 +15,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rails_12factor'
 gem 'faker'
-gem 'fastly-rails'
+gem 'fastly-rails', '~> 0.4.0'
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'pry-rails'
 end
