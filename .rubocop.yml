@@ -1,0 +1,170 @@
+AllCops:
+  Include:
+    - '**/*.gemspec'
+    - '**/*.podspec'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/Capfile'
+    - '**/Guardfile'
+    - '**/Podfile'
+    - '**/Thorfile'
+    - '**/Vagrantfile'
+    - '**/*.rb'
+  Exclude:
+    - Rakefile
+    - bin/generate_invoices
+    - bin/generate_prediction
+    - bin/generate_prediction_csv
+    - bundle/**/*
+    - cookbooks/northstar/definitions/gem.rb
+    - cookbooks/northstar/definitions/rack_app.rb
+    - cookbooks/northstar/metadata.rb
+    - cookbooks/northstar/attributes/northstar.rb
+    - cookbooks/northstar/recipes/default.rb
+    - db/**/*
+    - lib/action_dispatch/**/*
+    - lib/base_controller.rb
+    - lib/error_email.rb
+    - lib/model.rb
+    - lib/northstar.rb
+    - lib/extensions/object.rb
+    - lib/gateways/stripe.rb
+    - lib/heavenly/model.rb
+    - lib/heavenly/response.rb
+    - lib/middlewares/content_negotiate.rb
+    - lib/middlewares/cors.rb
+    - lib/middlewares/count_requests.rb
+    - lib/middlewares/decode_slashes.rb
+    - lib/middlewares/detailed_logging.rb
+    - lib/middlewares/generic_error_handler.rb
+    - lib/middlewares/heavenly_error_handler.rb
+    - lib/middlewares/ip_restriction.rb
+    - lib/middlewares/maintenance_mode.rb
+    - lib/middlewares/not_found_handler.rb
+    - lib/middlewares/rate_limiter.rb
+    - lib/middlewares/record_invalid_handler.rb
+    - lib/middlewares/security_headers.rb
+    - lib/middlewares/static.rb
+    - lib/middlewares/verify_active_connections.rb
+    - lib/northstar/authorization.rb
+    - lib/timespiral/error.rb
+    - lib/timespiral/response.rb
+    - lib/util/net.rb
+    - tasks/audit.rake
+    - tasks/db.rake
+    - tasks/licenses.rake
+    - test/factories.rb
+    - test/test_helper.rb
+    - test/support/heavenly_schema.rb
+    - test/support/tap_formatter.rb
+    - test/unit/account_lockout_test.rb
+    - test/unit/billing_test.rb
+    - test/unit/controllers/admin_controller_test.rb
+    - test/unit/controllers/authentication_controller_test.rb
+    - test/unit/controllers/backend_controller_test.rb
+    - test/unit/controllers/billing_controller_test.rb
+    - test/unit/controllers/cache_settings_controller_test.rb
+    - test/unit/controllers/confirmation_controller_test.rb
+    - test/unit/controllers/customer_controller_limits_test.rb
+    - test/unit/controllers/customer_controller_test.rb
+    - test/unit/controllers/debug_controller_test.rb
+    - test/unit/controllers/diff_controller_test.rb
+    - test/unit/controllers/docs_controller_test.rb
+    - test/unit/controllers/event_log_controller_test.rb
+    - test/unit/controllers/invitation_controller_test.rb
+    - test/unit/controllers/logging_controller_test.rb
+    - test/unit/controllers/partner_controller_test.rb
+    - test/unit/controllers/payment_controller_test.rb
+    - test/unit/controllers/plugin_controller/drupal_plugin_test.rb
+    - test/unit/controllers/pricing_extras_controller_test.rb
+    - test/unit/controllers/rendition_controller_test.rb
+    - test/unit/controllers/service_controller_limits_test.rb
+    - test/unit/controllers/service_controller_test.rb
+    - test/unit/controllers/settings_controller_test.rb
+    - test/unit/controllers/signup_controller_test.rb
+    - test/unit/controllers/ssl_config_controller_test.rb
+    - test/unit/controllers/stream_controller_test.rb
+    - test/unit/controllers/user_controller_test.rb
+    - test/unit/controllers/version_controller_test.rb
+    - test/unit/gateways/quickbooks_test.rb
+    - test/unit/heavenly/model_test.rb
+    - test/unit/integration/internal_user_test.rb
+    - test/unit/integration/sales_admin_test.rb
+    - test/unit/mail/cert_mail_test.rb
+    - test/unit/middlewares/cors_test.rb
+    - test/unit/middlewares/heavenly_error_handler_test.rb
+    - test/unit/middlewares/ip_restriction_test.rb
+    - test/unit/middlewares/security_headers_test.rb
+    - test/unit/payment_test.rb
+    - test/unit/services/seraph_test.rb
+    - test/unit/timespiral/http_client_test.rb
+    - test/unit/util/date_test.rb
+    - test/unit/util/dictionary_test.rb
+    - test/unit/util/doc_parser_test.rb
+    - test/unit/util/logging_test.rb
+    - test/unit/util/net_test.rb
+    - test/unit/util/uri_test.rb
+    - vendor/**/*
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+LineLength:
+  Enabled: false
+
+HashSyntax:
+  Enabled: false
+
+BracesAroundHashParameters:
+  Enabled: false
+
+BlockNesting:
+  Enabled: false
+
+AssignmentInCondition:
+  Enabled: false
+
+CollectionMethods:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+MethodLength:
+  Enabled: false
+
+PerlBackrefs:
+  Enabled: false
+
+RescueModifier:
+  Enabled: false
+
+HandleExceptions:
+  Enabled: false
+
+ClassLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+RegexpLiteral:
+  Enabled: false
+
+SignalException:
+  EnforcedStyle: only_raise
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/TrailingComma:
+  Enabled: false
+
+Style/TrivialAccessors:
+  Enabled: true
+  ExactNameMatch: true
+
+Style/LineEndConcatenation:
+  Enabled: false

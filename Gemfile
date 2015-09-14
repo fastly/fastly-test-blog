@@ -16,6 +16,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor'
 gem 'faker'
 gem 'fastly-rails', '~> 0.4.0'
+gem 'rubocop', '~> 0.25.0'
 
 group :development, :test do
   gem 'byebug'
