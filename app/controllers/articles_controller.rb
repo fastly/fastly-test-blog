@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-
   before_action :find_article, only: [:show, :create_comment, :destroy]
   before_action :set_cache_control_headers, only: [:index, :show]
   before_action :set_private, only: [:create_comment, :create_article]
@@ -29,7 +28,7 @@ class ArticlesController < ApplicationController
 
   # Creates a new article
   def create_article
-    new_article = Article.create_random_article
+    Article.create_random_article
     redirect_to articles_url
   end
 
@@ -49,6 +48,6 @@ class ArticlesController < ApplicationController
   # Private: Sets Cache-Control headers to not store content
   # Used for create methods.
   def set_private
-    response.headers["Cache-Control"] = "no-cache, no-store, max-age=0, must-revalidate"
+    response.headers['Cache-Control'] = 'no-cache, no-store, max-age=0, must-revalidate'
   end
 end
