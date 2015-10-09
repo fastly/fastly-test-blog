@@ -7,7 +7,6 @@ class ArticlesControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to(articles_url)
-
   end
 
   test 'article show' do
@@ -17,5 +16,14 @@ class ArticlesControllerTest < ActionController::TestCase
 
     assert_equal article.record_key, response.headers["Surrogate-Key"]
     assert_response(:success)
+  end
+
+  test 'article deletion' do
+    article = articles(:two)
+
+    delete :destroy, id: article
+
+    assert_redirected_to(articles_path)
+    assert_equal false, Article.exists?(article)
   end
 end
