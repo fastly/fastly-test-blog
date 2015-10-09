@@ -26,4 +26,11 @@ class ArticlesControllerTest < ActionController::TestCase
     assert_redirected_to(articles_path)
     assert_equal false, Article.exists?(article)
   end
+
+  test 'article index links to articles' do
+    get :index
+
+    assert_select "a[href=?]", "/articles/#{articles(:one).id}"
+    assert_select "a[href=?]", "/articles/#{articles(:two).id}"
+  end
 end
