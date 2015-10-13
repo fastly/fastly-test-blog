@@ -14,7 +14,7 @@ class ArticlesControllerTest < ActionController::TestCase
 
     get :show, id: article
 
-    assert_equal article.record_key, response.headers["Surrogate-Key"]
+    assert_equal article.record_key, response.headers['Surrogate-Key']
     assert_response(:success)
   end
 
@@ -30,7 +30,7 @@ class ArticlesControllerTest < ActionController::TestCase
   test 'article index links to articles' do
     get :index
 
-    assert_select "a[href=?]", "/articles/#{articles(:one).id}"
-    assert_select "a[href=?]", "/articles/#{articles(:two).id}"
+    assert_select 'a[href=?]', "/articles/#{articles(:one).id}"
+    assert_select 'a[href=?]', "/articles/#{articles(:two).id}"
   end
 end
