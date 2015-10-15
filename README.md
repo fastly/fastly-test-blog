@@ -15,3 +15,7 @@ It is named after [Formula Rossa](https://en.wikipedia.org/wiki/Formula_Rossa), 
 If you already have a demo URL, please go to the [Wiki](https://github.com/fastly/rossa/wiki) to get started.
 
 If you are leading the demo, be sure to read over [the guide](https://github.com/fastly/rossa/wiki/Training-guide).
+
+### License
+
+MIT license, see LICENSE.md
