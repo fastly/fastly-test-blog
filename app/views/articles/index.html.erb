@@ -1,0 +1,17 @@
+<div class="center jumbotron">
+  <h1>Articles</h1>
+
+  <%= link_to 'About', about_path, class: "btn btn-primary" %>
+</div>
+
+<section>
+  <ul>
+    <% @articles.each do |article| %>
+      <li><%= link_to article.title.titleize, article_path(article) %></li>
+    <% end %>
+  </ul>
+</section>
+
+<div>
+  <%= link_to 'Create new article', create_article_new_article_path, class: "btn btn-primary" %>
+</div>

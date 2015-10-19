@@ -1,0 +1,84 @@
+AllCops:
+  Include:
+    - '**/*.gemspec'
+    - '**/*.podspec'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/Capfile'
+    - '**/Guardfile'
+    - '**/Podfile'
+    - '**/Thorfile'
+    - '**/Vagrantfile'
+    - '**/*.rb'
+  Exclude:
+    - Rakefile
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - lib/**/*
+    - public/**/*
+    - vendor/**/*
+
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+LineLength:
+  Enabled: false
+
+HashSyntax:
+  Enabled: false
+
+BracesAroundHashParameters:
+  Enabled: false
+
+BlockNesting:
+  Enabled: false
+
+AssignmentInCondition:
+  Enabled: false
+
+CollectionMethods:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+MethodLength:
+  Enabled: false
+
+PerlBackrefs:
+  Enabled: false
+
+RescueModifier:
+  Enabled: false
+
+HandleExceptions:
+  Enabled: false
+
+ClassLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+RegexpLiteral:
+  Enabled: false
+
+SignalException:
+  EnforcedStyle: only_raise
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/TrailingComma:
+  Enabled: false
+
+Style/TrivialAccessors:
+  Enabled: true
+  ExactNameMatch: true
+
+Style/LineEndConcatenation:
+  Enabled: false
