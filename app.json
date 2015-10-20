@@ -1,6 +1,6 @@
 {
     "name": "Fastly Fake Blog",
-    "repository": "https://github.com/fastly/fastly-fake-blog",
+    "repository": "https://github.com/fastly/fastly-fake-blog/tree/fix-heroku-deploy-button",
     "success_url": "/articles",
     "scripts": {
         "postdeploy": "bundle exec rake db:migrate"
