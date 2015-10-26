@@ -3,7 +3,7 @@
     "repository": "https://github.com/fastly/fastly-fake-blog",
     "success_url": "/articles",
     "scripts": {
-        "postdeploy": "heroku run rake db:migrate"
+        "postdeploy": "bundle exec rake db:migrate"
     },
     "generator": "https://www.expeditedssl.com/heroku-button-maker"
 }
