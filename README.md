@@ -1,6 +1,6 @@
 # Fastly Test Blog
 
-This is a blog style application with fake content that can be cached and purged using Fastly.
+This is a blog style application with fake content that can be cached and purged using Fastly. See the related [blog post](https://www.fastly.com/blog/introducing-our-open-source-app-training/) for an overview.
 
 ### Installation
 
