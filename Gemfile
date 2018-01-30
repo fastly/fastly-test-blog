@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '~> 4.2.5.2'
+gem 'rails', '~> 4.2.7.1'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
