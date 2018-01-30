@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '4.2.4'
+gem 'rails', '~> 4.2.5.2'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
@@ -16,7 +16,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor'
 gem 'faker'
 gem 'fastly-rails', '~> 0.4.0'
-gem 'rubocop', '~> 0.25.0'
+gem 'rubocop', '~> 0.49.0'
 
 group :development, :test do
   gem 'byebug'
