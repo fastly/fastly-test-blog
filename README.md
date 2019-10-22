@@ -6,7 +6,7 @@ This is a blog style application with fake content that can be cached and purged
 
 You will set up a new service in your Fastly account, and configure it in order to familiarize yourself with your account. If you do not have a Fastly account, you will need to create one: https://www.fastly.com/signup
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/fastly/fastly-test-blog)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ### Configuration
 
